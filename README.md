@@ -12,20 +12,20 @@
 **Table of Contents:**
 
 <!--ts-->
-* [Motivation](#motivation)
-* [Introduction to Amazon SageMaker](#introduction-to-amazon-sagemaker)
+* [Motivation](#-motivation)
+* [Introduction to Amazon SageMaker](#-introduction-to-amazon-sagemaker)
   * [What is it?](#what-is-it)
   * [Why use it?](#why-use-it)
-* [Business Objective](#business-objective)
-* [Setup](#setup)
-* [Data](#data)
-* [References](#references)
-* [Feedback](#feedback)
+* [Business Objective](#-business-objective)
+* [Setup](#-setup)
+* [Data](#-data)
+* [References](#-references)
+* [Feedback](#-feedback)
 <!--te-->
 
 <br>
 
-## Motivation
+## 🎯 Motivation
 
 The aim of this mini project is to learn how to use Amazon SageMaker to build, train, and deploy a Machine Learning (ML) model using the XGBoost algorithm. Specifically, we will develop a model that predicts whether a customer will subscribe to a product (bank term deposit) offered by a bank.
 
@@ -33,7 +33,7 @@ The code is adapted from the hands-on tutorial '***[Build, train, and deploy a m
 
 <br>
 
-## Introduction to Amazon SageMaker
+## 📚 Introduction to Amazon SageMaker
 
 ### What is it?
 
@@ -47,17 +47,23 @@ SageMaker provides an integrated Jupyter authoring notebook instance for easy ac
 
 There are several benefits to using cloud services such as SageMaker for data science and machine/deep learning (ML/DL) tasks. Firstly, cloud computing offers businesses increased speed, scalability, and flexibility when it comes to computing needs:
 
-- Speed: By leveraging technologies such as clusters of GPUs and CPUs to perform complex operations on compute-intensive tasks, users can design, develop and train ML/DL applications faster.
-- Scalability: With the wide range of on-demand resources available through the cloud, users can deploy virtually unlimited resources to tackle complex tasks of any size.
-- Flexibility: Several Deep learning frameworks (such as TensorFlow, Torch, Keras etc.) can be run on the cloud, allowing users to use packaged libraries of deep learning algorithms best suited for a particular use case, whether it’s for web, mobile or connected devices.
+- **Speed**: By leveraging technologies such as clusters of GPUs and CPUs to perform complex operations on compute-intensive tasks, users can design, develop and train ML/DL applications faster.
+- **Scalability**: With the wide range of on-demand resources available through the cloud, users can deploy virtually unlimited resources to tackle complex tasks of any size.
+- **Flexibility**: Several Deep learning frameworks (such as TensorFlow, Torch, Keras etc.) can be run on the cloud, allowing users to use packaged libraries of deep learning algorithms best suited for a particular use case, whether it’s for web, mobile or connected devices.
 
 Additionally, the cloud makes ML/DL more accessible. SageMaker, in particular, enables more people and businesses to innovate with ML through a wide variety of tools, such as integrated development environments for data scientists and no-code visual interfaces for business analysts.
 
 Finally, the cloud’s pay-as-you-go model means that users typically pay only for cloud services they use. This approach helps businesses lower their operating costs, run their infrastructure more efficiently, and scale as the business needs change.
 
+For more information, please refer to the following articles:
+
+[1]	[What Is Amazon SageMaker?](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html). <br>
+[2]	[Amazon SageMaker](https://aws.amazon.com/sagemaker/). <br>
+[3]	[Deep Learning on AWS](https://aws.amazon.com/deep-learning/). <br>
+
 <br>
 
-## Business Objective
+## 💼 Business Objective
 
 In an imaginary scenario, we are hired as data scientists by a banking institution that has compiled a dataset related to their marketing campaign. The data set contains information on customer demographics, previous responses to marketing events, and external factors.
 
@@ -65,16 +71,21 @@ The data also contains a target variable which identifies whether a previous cus
 
 The bank aims to use our data to target customers less likely to subscribe and offer them special deals and services. The bank will also like to identify which features are more important in influencing customer decisions.
 
+<br>
+
+## 🛠 Setup
+
+The quickest setup to run the notebook requires:
+- An AWS account
+- Proper IAM User and Role setup
+- An Amazon SageMaker Notebook Instance
+- An S3 bucket (created when running the code in the Jupyter notebook)
+
+To run the notebook, you will need to get set up with a SageMaker notebook environment and clone in this repository. For instructions, please visit [this link](https://catalog.us-east-1.prod.workshops.aws/workshops/0c6b8a23-b837-4e0f-b2e2-4a3ffd7d645b/en-US/getting-started/setup) that demonstrates how to run code wither in an AWS hosted event or with your own AWS account.
 
 <br>
 
-## Setup
-
-
-
-<br>
-
-## Data
+## 📊 Data
 
 The model will be trained on the Bank Marketing Data Set that contains information on customer demographics, previous responses to marketing events, and external factors (such as employment variation rate and consumer confidence index). The data is related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact with the same client was required to access if the product (bank term deposit) would be (‘yes’) or not (‘no’) subscribed.
 
@@ -84,13 +95,19 @@ The original version of this dataset is publicly available from the Machine Lear
 
 <br>
 
-## References
+## 📕 References
 
 The principal resource for this mini-project is the hands-on tutorial '***[Build, train, and deploy a machine learning model with Amazon SageMaker](https://aws.amazon.com/getting-started/hands-on/build-train-deploy-machine-learning-model-sagemaker/?trk=el_a134p000003yWILAA2&trkCampaign=DS_SageMaker_Tutorial&sc_channel=el&sc_campaign=Data_Scientist_Hands-on_Tutorial&sc_outcome=Product_Marketing&sc_geo=mult&p=gsrc&c=lp_ds)***' provided by AWS.
 
+Other resources include:
+
+[1] [Cloud computing with AWS](https://aws.amazon.com/what-is-aws/). <br>
+[2] [What Is Amazon SageMaker?](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) and references therein. <br>
+[3] [Get Started with Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-console.html) and references thereing (specifically, the seven steps below that **Topics** section).
+
 <br>
 
-## Feedback
+## 📞 Feedback
 
 If you have any feedback or ideas to improve this project, feel free to contact me via:
 
